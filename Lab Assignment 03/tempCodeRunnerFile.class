@@ -1,0 +1,19 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+import java.util.Scanner;
+
+public class problem02 {
+   public problem02() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var2 = new Scanner(System.in);
+      System.out.print("Enter the number: ");
+      int var1 = var2.nextInt();
+      if (var1 == 0) {
+         System.out.println("Even");
+      } else {
+         System.out.println("odd");
+      }
+
+   }
+}

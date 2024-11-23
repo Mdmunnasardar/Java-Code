@@ -6,7 +6,7 @@ public class problem02 {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number: ");
         number = input.nextInt();
-        if (number == 0) {
+        if (number%2== 0) {
             System.out.println("Even");
         } else {
             System.out.println("Odd");
