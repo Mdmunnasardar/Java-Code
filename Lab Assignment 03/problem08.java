@@ -7,7 +7,7 @@ public class problem08 {
         System.out.print("Enter a number: ");
         number = input.nextInt();
 
-        for (int i = 1; i < 10; i++) {
+        for (int i = 1; i < 11; i++) {
             int multi = number * i;
 
             System.out.println(number + "*" + i + "=" + multi);

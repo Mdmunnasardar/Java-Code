@@ -5,7 +5,7 @@ public class problem07 {
         int number;
         int sum = 0;
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a number: ");
+        System.out.print("Enter a number: ");
         number = input.nextInt();
 
         while (number != 0) {
@@ -14,7 +14,7 @@ public class problem07 {
             number /= 10;
 
         }
-        System.out.println("Sum of digits: " + sum);
+        System.out.print("Sum of digits: " + sum);
 
         input.close();
 

@@ -19,7 +19,7 @@ public class problem03 {
             largest = num3;
         }
 
-        System.out.println("Sample Output:\nLargest number: " + largest);
+        System.out.println("Largest number: " + largest);
 
         input.close();
     }
