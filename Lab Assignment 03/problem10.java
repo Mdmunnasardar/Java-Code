@@ -7,12 +7,14 @@ public class problem10 {
         System.out.print("Enter first number: ");
         double num1 = scanner.nextDouble();
 
+        System.out.print("Enter Operator(+, -, *, /):");
+        char operation = scanner.next().charAt(0);
+
+
         System.out.print("Enter second number: ");
         double num2 = scanner.nextDouble();
 
-        System.out.print("Choose an operation: +, -, *, /");
-        char operation = scanner.next().charAt(0);
-
+        
         double result;
 
         switch (operation) {
