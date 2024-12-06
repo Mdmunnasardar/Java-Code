@@ -9,17 +9,17 @@ public class sortArray {
 
         int size = input.nextInt();
         int number[] = new int[size];
-        System.out.println("enter element: ");
+        System.out.print("enter element: ");
         for (int i = 0; i < size; i++) {
             number[i] = input.nextInt();
         }
 
-        // to sort the number then size-2 which is indicate last before value
-        // that is the second largest.and largest then size-1
-        // if say third largest then size-1
-        // after all need to the array sort.
+        
         Arrays.sort(number);
-        System.out.println("Second largest element: " + number[size - 2]);
+        System.out.println("Sort Array: ");
+        for (int i = 0; i < size; i++) {
+          System.out.print(number[i]+" ");
+        }
 
         input.close();
     }
