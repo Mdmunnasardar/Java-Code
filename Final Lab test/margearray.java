@@ -22,8 +22,13 @@ public class margearray {
         System.arraycopy(arr1, 0, mergedArray, 0, n1);
         System.arraycopy(arr2, 0, mergedArray, n1, n2);
         System.out.print("Merged array: ");
-        for (int num : mergedArray)
-            System.out.print(num + " ");
+       // for (int num : mergedArray)
+         //   System.out.print(num + " ");
+
+            for (int i = 0; i < mergedArray.length; i++) {
+                System.out.print(mergedArray[i] + " ");
+            }
+            
             sc.close();
     }
 }
