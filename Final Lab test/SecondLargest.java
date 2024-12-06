@@ -20,6 +20,8 @@ public class SecondLargest {
     //if say third largest then size-1
     //after all need to the array sort.
    Arrays.sort(number); 
-   System.out.println("Second largest element: " + number[size - 1]); 
+   System.out.println("Second largest element: " + number[size - 2]); 
+
+   input.close();
 }
 }
