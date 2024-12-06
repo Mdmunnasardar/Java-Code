@@ -1,8 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class findminimum {
-
+public class sortArray {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -15,10 +14,13 @@ public class findminimum {
             number[i] = input.nextInt();
         }
 
-        //finding minimum by sort.just array first index print which is 0..
+        // to sort the number then size-2 which is indicate last before value
+        // that is the second largest.and largest then size-1
+        // if say third largest then size-1
+        // after all need to the array sort.
         Arrays.sort(number);
-        System.out.println("Second largest element: " + number[0]);
+        System.out.println("Second largest element: " + number[size - 2]);
+
         input.close();
     }
-
 }
