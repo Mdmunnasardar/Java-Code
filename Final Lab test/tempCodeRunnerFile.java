@@ -1,2 +1,2 @@
 
-        System.out.println("target number: ");
+        if(isShorted){
