@@ -17,10 +17,10 @@ public class SecondLargest {
 
     //to sort the number then size-2 which is indicate last before value 
     //that is the second largest.and largest then size-1
-    //if say third largest then size-1
+    //if say third largest then size-3
     //after all need to the array sort.
    Arrays.sort(number); 
-   System.out.println("Second largest element: " + number[size - 2]); 
+   System.out.println("Second largest element: " + number[size-2]); 
 
    input.close();
 }
