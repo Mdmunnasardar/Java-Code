@@ -15,11 +15,11 @@ public class rotateOne {
         }
         int last = arr[size - 1];
 
-        for (int i = size - 1; i > 0; i--) {
+        for (int i = size - 1; i > 0; i--) 
             arr[i] = arr[i - 1];
             arr[0] = last;
         
-        System.out.print("Rotated array: ");}
+        System.out.print("Rotated array: ");
         for(int i=0;i<arr.length;i++)
             System.out.print(arr[i] + " ");
         
