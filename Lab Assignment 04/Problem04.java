@@ -1,42 +1,37 @@
-class CallByValueReference {
+class CBValue {
+    void meth(int x, int y) {
+        x = x + 10;
+        y = y - 5;
+    }
+}
 
-    public void modifyPrimitive(int x) {
-        x = 50;
+class CBReference {
+    int a, b;
+
+    CBReference(int x, int y) {
+        a = x;
+        b = y;
     }
 
-    public void modifyObject(Person p) {
-        p.setName("Updated Name");
+    void meth(CBReference obj) {
+        obj.a = obj.a + 5;
+        obj.b = obj.b - 2;
     }
 }
 
 public class Problem04 {
-    public static void main(String[] args) {
-        CallByValueReference obj = new CallByValueReference();
+    public static void main(String args[]) {
+        int a = 10, b = 20;
+        CBValue Ob = new CBValue();
 
-        int num = 10;
-        System.out.println("Before Call by Value: " + num);
-        obj.modifyPrimitive(num);
-        System.out.println("After Call by Value: " + num);
+        System.out.println("Before Call by Value: a = " + a + ", b = " + b);
+        Ob.meth(a, b);
+        System.out.println("After Call by Value: a = " + a + ", b = " + b);
 
-        Person person1 = new Person("Alice");
-        System.out.println("Before Call by Reference: " + person1.getName());
-        obj.modifyObject(person1);
-        System.out.println("After Call by Reference: " + person1.getName());
-    }
-}
+        CBReference Obj = new CBReference(10, 20);
 
-class Person {
-    private String name;
-
-    public Person(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        System.out.println("\nBefore Call by Reference: Obj.a = " + Obj.a + ", Obj.b = " + Obj.b);
+        Obj.meth(Obj);
+        System.out.println("After Call by Reference: Obj.a = " + Obj.a + ", Obj.b = " + Obj.b);
     }
 }
