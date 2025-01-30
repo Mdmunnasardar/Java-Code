@@ -26,7 +26,7 @@ public class Method {
         resultInt = ob.add(10, 20, 30);        
         System.out.println("Addition of three integers: " + resultInt);
 
-        resultDouble = ob.add(4, 5);        
+        resultDouble = ob.add(4.5, 5.6,9.5);        
         System.out.println("Addition of three integers: " + resultDouble);
 
 
