@@ -21,6 +21,7 @@ class MethodOvL {
         ob.test(10,20);
         ob.test(10);
         result=ob.test(123.5);
+        System.out.println("result: "+result);
 
     }
 }
