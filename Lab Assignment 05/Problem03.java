@@ -7,7 +7,7 @@ class Vehicle {
 class Car extends Vehicle {
     @Override
     public void move() {
-        System.out.println("The car is moving at 80 km/h on the road.");
+        System.out.println("The car is moving on the road.");
     }
 }
 
