@@ -1,41 +1,36 @@
 class Animal {
-    String name;
+    String type = "Animal";
 
-    public Animal(String name) {
-        this.name = name;
-    }
-
-    public void eat() {
-        System.out.println(name + " is eating.");
+    public void displayType() {
+        System.out.println("Type: " + type);
     }
 }
 
 class Mammal extends Animal {
-    public Mammal(String name) {
-        super(name);
-    }
+    String category = "Mammal";
 
-    public void walk() {
-        System.out.println(name + " is walking.");
+    public void displayCategory() {
+        System.out.println("Category: " + category);
     }
 }
 
 class Dog extends Mammal {
-    public Dog(String name) {
-        super(name); 
+    String breed;
+
+    public Dog(String breed) {
+        this.breed = breed;
     }
 
-    public void bark() {
-        System.out.println(name + " is barking: Gheu Gheu");
+    public void displayBreed() {
+        System.out.println("Breed: " + breed);
     }
 }
 
 public class Problem06 {
     public static void main(String[] args) {
-        Dog dog = new Dog("Tommy");
-
-        dog.eat();   // Inherited from Animal
-        dog.walk();  // Inherited from Mammal
-        dog.bark();  // Defined in Dog
+        Dog d = new Dog("Golden Retriever");
+        d.displayType();     
+        d.displayCategory();  
+        d.displayBreed();    
     }
 }
