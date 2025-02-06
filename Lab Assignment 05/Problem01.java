@@ -7,7 +7,7 @@ class Animal {
         this.age = age;
     }
     
-    public void displayInfo() {
+    public void display() {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
     }
@@ -27,7 +27,7 @@ class Dog extends Animal {
 public class Problem01 {
     public static void main(String[] args) {
         Dog myDog = new Dog("Buddy", 3);
-        myDog.displayInfo();
+        myDog.display();
         myDog.bark();
     }
 }
