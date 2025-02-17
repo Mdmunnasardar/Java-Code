@@ -1,6 +1,3 @@
-Here is the code without comments:
-
-```java
 import java.util.Scanner;
 
 class Clock {
@@ -135,6 +132,6 @@ public class Problem04 {
         System.out.println("thirdClock (difference): " + thirdClock);
 
         scanner.close();
-    }
+    
 }
-```
+}
