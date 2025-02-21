@@ -30,11 +30,6 @@ class Box {
         k = b;
         w = c;
     }
-
-    // Method to calculate the volume of the box
-    public double getVolume() {
-        return l * k * w;
-    }
 }
 
 public class constructorOver {
@@ -45,10 +40,10 @@ public class constructorOver {
         Box box3 = new Box(5.0, 3.0);         // Two parameters (length, width), default height
         Box box4 = new Box(5.0, 3.0, 2.0);    // Three parameters (length, width, height)
 
-        // Printing the volumes of the boxes
-        System.out.println("Volume of box1: " + box1.getVolume());
-        System.out.println("Volume of box2: " + box2.getVolume());
-        System.out.println("Volume of box3: " + box3.getVolume());
-        System.out.println("Volume of box4: " + box4.getVolume());
+        // Printing the dimensions and calculating the volumes directly
+        System.out.println("Box1: l = " + box1.l + ", k = " + box1.k + ", w = " + box1.w  );
+        System.out.println("Box2: l = " + box2.l + ", k = " + box2.k + ", w = " + box2.w  );
+        System.out.println("Box3: l = " + box3.l + ", k = " + box3.k + ", w = " + box3.w );
+        System.out.println("Box4: l = " + box4.l + ", k = " + box4.k + ", w = " + box4.w  );
     }
 }
