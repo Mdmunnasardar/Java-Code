@@ -5,7 +5,7 @@ public class parameters {
 
     // void volume() { // Fixed method name
     // System.out.println(width * height * depth);
-    // } this void which nothintg return now using return method value
+    // }  now using return method value
 
     double volume() {
         return width * height * depth;
