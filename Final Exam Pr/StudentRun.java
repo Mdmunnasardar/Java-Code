@@ -18,7 +18,7 @@ class Student {
 public class StudentRun {
     public static void main(String[] args) {
         Student ob1= new Student();
-        Student ob2= new Student();
+        Student ob2= new Student("munna");
 
         System.out.println(ob1.getName());
         System.out.println(ob1.getAge());
