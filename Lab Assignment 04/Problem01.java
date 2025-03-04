@@ -1,28 +1,20 @@
-class Method {
-
-    public int add(int a, int b) {
-        return a + b;
-    }
-    public int add(int a, int b, int c) {
-        return a + b + c;
-    }
-    public double add(double a, double b) {
-        return a + b;
-    }
-}
 public class Problem01 {
-    public static void main(String args[]) {
-        Method ob = new Method();
-        int resultInt;
-        double resultDouble;
 
-        resultInt = ob.add(10, 20);
-        System.out.println("Addition of two integers: " + resultInt);
+    // Method to calculate area of a rectangle
+    public double Area(double length, double width) {
+        return length * width;
+    }
 
-        resultInt = ob.add(10, 20, 30);
-        System.out.println("Addition of three integers: " + resultInt);
+    // Method to calculate area of a circle
+    public double Area(double radius) {
+        return Math.PI * radius * radius;
+    }
 
-        resultDouble = ob.add(4.5, 5.5);  
-        System.out.println("Addition of two doubles: " + resultDouble);
+    public static void main(String[] args) {
+       Problem01 c = new Problem01();
+
+        // Calculate and print areas
+        System.out.println("Rectangle Area: " + c.Area(5, 3));
+        System.out.println("Circle Area: " + c.Area(4));
     }
 }
