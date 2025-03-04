@@ -8,7 +8,7 @@ class Box {
     void modify(Box obj) {
         obj.value += 10; // Changes original object
     }
-    public class callbyref {
+  
     public static void main(String[] args) {
         Box b = new Box(5);
         b.modify(b);
@@ -16,4 +16,4 @@ class Box {
     }
 }
     
-}
+
